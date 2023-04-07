@@ -2,6 +2,8 @@ using ITfoxtec.Identity.Saml2;
 using ITfoxtec.Identity.Saml2.MvcCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using POC_Saml.Helpers;
+using POC_Saml.Models.Request;
 
 namespace POC_Saml.Controllers;
 
@@ -24,9 +26,13 @@ public class WeatherForecastController : ControllerBase
         _samlConfig = configAccessor.Value;
     }
 
+    
+    //Necessary add this rout on Azure URIS redirecting 
     [HttpPost(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    public IEnumerable<WeatherForecast> Post([FromForm] AzureAdRequestCallbackRequest request)
     {
+        var xmlSamlResponseDecrypted = Base64Helper.DecodeBase64(request.SAMLResponse);
+        
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
