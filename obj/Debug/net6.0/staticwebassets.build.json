@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "RuqftPM7dRLvON8CnNk6kup40s3xisdxH51kXv1ZNxI=",
+  "Source": "POC-Saml",
+  "BasePath": "_content/POC-Saml",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "POC-Saml\\wwwroot",
+      "Source": "POC-Saml",
+      "ContentRoot": "G:\\XJUR\\POC-Saml\\wwwroot\\",
+      "BasePath": "_content/POC-Saml",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "G:\\XJUR\\POC-Saml\\wwwroot\\xjurad.xml",
+      "SourceId": "POC-Saml",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\XJUR\\POC-Saml\\wwwroot\\",
+      "BasePath": "_content/POC-Saml",
+      "RelativePath": "xjurad.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\xjurad.xml"
+    }
+  ]
+}

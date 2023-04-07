@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\XJUR\\POC-Saml\\wwwroot\\xjurad.xml",
+      "PackagePath": "staticwebassets\\xjurad.xml"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.POC-Saml.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.POC-Saml.props",
+      "PackagePath": "build\\POC-Saml.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.POC-Saml.props",
+      "PackagePath": "buildMultiTargeting\\POC-Saml.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.POC-Saml.props",
+      "PackagePath": "buildTransitive\\POC-Saml.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
